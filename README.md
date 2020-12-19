@@ -21,7 +21,7 @@ $ ssh-copy-id -i <key.pub> user@ip
 On the remote machine, edit `/etc/ssh/sshd_config`:
 ```
 PubkeyAuthentication yes
-AuthorizedKeysFile      /home/fluffy/.ssh/authorized_keys
+AuthorizedKeysFile /home/<user>/.ssh/authorized_keys
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM no
