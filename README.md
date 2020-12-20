@@ -5,7 +5,7 @@
 
 ## Static IP
 
-See the "Static IP Address Assignment" assign from
+See the "Static IP Address Assignment" section from
 [this page](https://ubuntu.com/server/docs/network-configuration).
 
 ## SSH Server
