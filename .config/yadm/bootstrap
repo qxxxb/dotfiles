@@ -49,3 +49,4 @@ fi
 
 sh $dir/install_fonts.sh
 sh $dir/install_python.sh
+sh $dir/root_configs.sh

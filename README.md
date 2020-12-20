@@ -64,5 +64,3 @@ $ yadm bootstrap
 ### GTK
 
 - Open `LXAppearance` set `Yaru` as theme
-
-### Configs for root
