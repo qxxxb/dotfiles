@@ -29,3 +29,6 @@ sudo apt autopurge
 
 sudo apt-get update --fix-missing
 sudo apt-get install lightdm
+
+# Consider disabling GUI display manager
+# https://unix.stackexchange.com/a/264417
