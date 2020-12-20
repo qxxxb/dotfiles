@@ -14,3 +14,7 @@ pyenv --skip-existing install pypy3.6-7.3.1
 pyenv global 3.9.1
 
 sudo apt autoremove
+
+# Keep one system-wide Python3 installation so that the root account can use it
+# too.
+sudo apt-get install python3-pip

@@ -28,6 +28,7 @@ then
     echo 'Symlinking Neovim commands to root'
     sudo mkdir -p /root/.config
     sudo ln -s $HOME/.config/nvim /root/.config/nvim
+    pip3 install --user neovim
 else
     echo 'Neovim configs already symlinked'
 fi
