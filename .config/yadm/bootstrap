@@ -1,9 +1,23 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+if dpkg-query -l gnome-desktop3 |& grep -q 'no packages found'; then
+    # fart
+    echo 'GNOME already uninstalled'
+else
+    sh $HOME/.config/yadm/remove_gnome.sh
+fi
 
 sudo apt-get install \
     curl \
     zsh \
-    ripgrep
+    ripgrep \
+    i3 \
+    i3blocks \
+    rofi \
+    compton \
+    nemo \
+    xsel \
+    firefox
 
 if [ "$SHELL" != $(which zsh) ]
 then
@@ -20,3 +34,10 @@ fi
 git config --global user.name qxxxb
 git config --global user.email "46016483+qxxxb@users.noreply.github.com"
 git config --global core.excludesFile "$HOME/.gitignore_global"
+
+if [ ! -d "$HOME/.local/kitty.app/" ]
+then
+    sh $HOME/.config/yadm/install_kitty.sh
+fi
+
+sh $HOME/.config/yadm/install_fonts.sh

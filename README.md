@@ -42,3 +42,13 @@ $ sudo apt-get install yadm
 $ yadm clone https://github.com/qxxxb/dotfiles
 $ yadm bootstrap
 ```
+
+## Desktop
+
+Switch to `i3`.
+
+### Firefox
+
+- Install `Saka Key`
+  - Set to one-handed key binds
+- Install `uBlock Origin`
