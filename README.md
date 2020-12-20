@@ -1,4 +1,7 @@
-# Server dotfiles
+# Dotfiles
+
+- Minimal dotfiles
+- Ubuntu 20.04
 
 ## Static IP
 
