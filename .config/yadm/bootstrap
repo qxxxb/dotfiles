@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dir=$HOME/.config/yadm/bootstrap_scripts
+
 sudo apt-get install \
     curl \
     zsh \
@@ -20,3 +22,5 @@ fi
 git config --global user.name qxxxb
 git config --global user.email "46016483+qxxxb@users.noreply.github.com"
 git config --global core.excludesFile "$HOME/.gitignore_global"
+
+sh $dir/install_python.sh
