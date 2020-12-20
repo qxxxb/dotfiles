@@ -38,10 +38,11 @@ $ ssh -i ~/.ssh/<key> user@ip
 
 ## Dotfiles
 
-I use [yadm](https://yadm.io/)
+I use [yadm](https://yadm.io/).
 
 ```
 $ sudo apt-get install yadm
 $ yadm clone https://github.com/qxxxb/dotfiles
+$ yadm checkout <branch>
 $ yadm bootstrap
 ```
