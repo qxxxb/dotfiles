@@ -31,9 +31,22 @@ UsePAM no
 AcceptEnv LANG LC_*
 ```
 
+On the local machine, create a file `~/.ssh/config`:
+```sshconfig
+Host <alias>
+    HostName <ip>
+    User <username>
+    IdentityFile ~/.ssh/<key>
+```
+
+Make sure that only the user owning the file can read and write to it.
+```
+$ chmod 600 ~/.ssh/config
+```
+
 Now to login from the local machine:
 ```
-$ ssh -i ~/.ssh/<key> user@ip
+$ ssh <alias>
 ```
 
 ## Dotfiles
