@@ -55,6 +55,20 @@ $ yadm bootstrap
   - Open it `feh`
       - Right click, `File`, `Background`, `Set Filled`
 
+### Ignore lid switch
+
+Edit `/etc/systemd/logind.conf`:
+```
+HandleLidSwitch=ignore
+```
+
+Then run
+```
+$ sudo systemctl restart systemd-logind
+```
+
+Source [here](https://www.dell.com/community/Linux-General/Stop-laptop-going-to-sleep-when-closing-the-lid-UBUNTU-Server/td-p/6086201)
+
 ### Firefox
 
 - Install `Saka Key`
