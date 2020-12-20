@@ -45,10 +45,19 @@ $ yadm bootstrap
 
 ## Desktop
 
-Switch to `i3`.
+- Switch to `i3`.
+- Background
+  - Move an image to `~/Pictures/wallpapers` so you don't accidentally change
+    the path
+  - Open it `feh`
+      - Right click, `File`, `Background`, `Set Filled`
 
 ### Firefox
 
 - Install `Saka Key`
   - Set to one-handed key binds
 - Install `uBlock Origin`
+
+### GTK
+
+- Open `LXAppearance` set `Yaru` as theme

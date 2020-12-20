@@ -17,7 +17,12 @@ sudo apt-get install \
     compton \
     nemo \
     xsel \
-    firefox
+    firefox \
+    yaru-theme-gtk \
+    yaru-theme-icon \
+    lxappearance \
+    eog \
+    feh
 
 if [ "$SHELL" != $(which zsh) ]
 then
