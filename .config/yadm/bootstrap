@@ -18,6 +18,7 @@ sudo apt-get install \
     compton \
     nemo \
     xsel \
+    light \
     firefox \
     yaru-theme-gtk \
     yaru-theme-icon \
