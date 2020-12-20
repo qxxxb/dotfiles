@@ -3,7 +3,6 @@
 dir=$HOME/.config/yadm/bootstrap_scripts
 
 if dpkg-query -l gnome-desktop3 |& grep -q 'no packages found'; then
-    # fart
     echo 'GNOME already uninstalled'
 else
     sh $dir/remove_gnome.sh
