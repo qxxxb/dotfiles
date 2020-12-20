@@ -1,4 +1,7 @@
-# Server dotfiles
+# Dotfiles
+
+- Dell Inspiron 15 laptop home server
+- Ubuntu 20.04
 
 ## Static IP
 
