@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+dir=$HOME/.config/yadm/bootstrap_scripts
+
 if dpkg-query -l gnome-desktop3 |& grep -q 'no packages found'; then
     # fart
     echo 'GNOME already uninstalled'
 else
-    sh $HOME/.config/yadm/remove_gnome.sh
+    sh $dir/remove_gnome.sh
 fi
 
 sudo apt-get install \
@@ -42,7 +44,8 @@ git config --global core.excludesFile "$HOME/.gitignore_global"
 
 if [ ! -d "$HOME/.local/kitty.app/" ]
 then
-    sh $HOME/.config/yadm/install_kitty.sh
+    sh $dir/install_kitty.sh
 fi
 
-sh $HOME/.config/yadm/install_fonts.sh
+sh $dir/install_fonts.sh
+sh $dir/install_python.sh
