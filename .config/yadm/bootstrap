@@ -14,7 +14,7 @@ if [ ! -d "$HOME/.zplug" ]
 then
     # zplug installer
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-    zplug install
+    echo 'Run \`zplug install\`'
 fi
 
 git config --global user.name qxxxb
