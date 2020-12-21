@@ -7,12 +7,9 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
     libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 
-cat << EOF
-Run the following commands:
-$ pyenv --skip-existing install 3.9.1
-$ pyenv --skip-existing install 2.7.18
-$ pyenv --skip-existing install pypy3.6-7.3.1
-EOF
+    echo 'pyenv --skip-existing install 3.9.1' >> todo.log
+    echo 'pyenv --skip-existing install 2.7.18' >> todo.log
+    echo 'pyenv --skip-existing install pypy3.6-7.3.1' >> todo.log
 
 pyenv global 3.9.1
 

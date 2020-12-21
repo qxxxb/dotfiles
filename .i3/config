@@ -157,7 +157,7 @@ bindsym Mod1+Shift+o restart
 
 # Exit
 bindsym Mod1+Shift+p exec rofi -show powermenu -modi \
-    "powermenu:rofi_power_menu.sh --no-symbols"
+    "powermenu:$HOME/Programs/static/bin/rofi_power_menu.sh --no-symbols"
 
 # Volume controls
 bindsym XF86AudioRaiseVolume \
@@ -205,7 +205,7 @@ bindsym Mod4+e exec nemo $HOME
 # Rofi
 bindsym Mod1+Escape exec rofi -show drun
 bindsym Mod1+Tab exec rofi -show window
-bindsym Mod1+Shift+l exec rofi_emoji.sh
+bindsym Mod1+Shift+l exec $HOME/Programs/static/bin/rofi_emoji.sh
 
 # Edit clipboard in Neovim
 bindsym Mod1+m \

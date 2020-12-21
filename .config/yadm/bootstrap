@@ -2,29 +2,9 @@
 
 dir=$HOME/.config/yadm/bootstrap_scripts
 
-if dpkg-query -l gnome-desktop3 |& grep -q 'no packages found'; then
-    echo 'GNOME already uninstalled'
-else
-    sh $dir/remove_gnome.sh
-fi
-
 sudo apt-get install \
     curl \
-    zsh \
-    ripgrep \
-    i3 \
-    i3blocks \
-    rofi \
-    compton \
-    nemo \
-    xsel \
-    light \
-    firefox \
-    yaru-theme-gtk \
-    yaru-theme-icon \
-    lxappearance \
-    eog \
-    feh
+    zsh
 
 if [ "$SHELL" != $(which zsh) ]
 then
@@ -35,7 +15,7 @@ if [ ! -d "$HOME/.zplug" ]
 then
     # zplug installer
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-    zplug install
+    echo 'zplug install' >> todo.log
 fi
 
 git config --global user.name qxxxb
@@ -50,3 +30,26 @@ fi
 sh $dir/install_fonts.sh
 sh $dir/install_python.sh
 sh $dir/root_configs.sh
+
+sudo apt-get install \
+    neovim \
+    ripgrep \
+    i3 \
+    i3blocks \
+    rofi \
+    compton \
+    nemo \
+    xsel \
+    light \
+    firefox \
+    yaru-theme-gtk \
+    yaru-theme-icon \
+    lxappearance \
+    eog \
+    feh \
+    htop \
+    neofetch
+
+sudo apt-get autopurge
+
+echo 'Done, check `todo.log` to finish.'
