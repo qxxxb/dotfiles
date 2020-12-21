@@ -52,4 +52,5 @@ sudo apt-get install \
 
 sudo apt-get autopurge
 
+echo '# ---' >> todo.log
 echo 'Done, check `todo.log` to finish.'
