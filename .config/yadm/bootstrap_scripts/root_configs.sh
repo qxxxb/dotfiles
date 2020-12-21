@@ -12,7 +12,7 @@ then
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
     # For some reason I can't do it from within a script
-    cat << \EOF2
+    cat << EOF2
 Run the following commands:
 $ sudo -s
 # zplug install
