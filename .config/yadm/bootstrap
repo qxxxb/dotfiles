@@ -3,7 +3,8 @@
 sudo apt-get install \
     curl \
     zsh \
-    ripgrep
+    ripgrep \
+    neovim
 
 if [ "$SHELL" != $(which zsh) ]
 then
@@ -14,9 +15,12 @@ if [ ! -d "$HOME/.zplug" ]
 then
     # zplug installer
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-    echo 'Run \`zplug install\`'
+    echo 'zplug install' >> todo.log
 fi
 
 git config --global user.name qxxxb
 git config --global user.email "46016483+qxxxb@users.noreply.github.com"
 git config --global core.excludesFile "$HOME/.gitignore_global"
+
+echo '# ---' >> todo.log
+echo 'Done, check `todo.log` to finish'
