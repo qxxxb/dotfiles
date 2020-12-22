@@ -1,6 +1,6 @@
 # Dotfiles
 
-- ASUS ViveBook S15 laptop
+- ASUS VivoBook S15 laptop
 - Xubuntu 20.04
 
 I use [yadm](https://yadm.io/).
