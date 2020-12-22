@@ -8,4 +8,4 @@ dir=/sys/class/backlight/intel_backlight
 sudo groupadd -r video
 sudo chown :video $dir/brightness
 sudo chmod g+w $dir/brightness
-sudo usermod -a -G video fluffy
+sudo usermod -a -G video $USER
