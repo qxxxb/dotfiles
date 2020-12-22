@@ -7,7 +7,8 @@ sudo apt install \
     fonts-cantarell
 
 # For some reason only this specific file works properly.
-dir=/usr/share/fonts/truetype/nerd_fonts/
-sudo mkdir -p $dir
-sudo cp ../bootstrap_assets/fura_code_nf.ttf $dir
-sudo fc-cache $dir -v
+dst_dir=/usr/share/fonts/truetype/nerd_fonts
+src_dir=$HOME/.config/yadm/bootstrap_assets
+sudo mkdir -p $dst_dir
+sudo cp $src_dir/fura_code_nf.ttf $dst_dir
+sudo fc-cache $dst_dir -v
