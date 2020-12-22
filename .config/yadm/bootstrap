@@ -22,16 +22,6 @@ git config --global user.name qxxxb
 git config --global user.email "46016483+qxxxb@users.noreply.github.com"
 git config --global core.excludesFile "$HOME/.gitignore_global"
 
-if [ ! -d "$HOME/.local/kitty.app/" ]
-then
-    sh $dir/install_kitty.sh
-fi
-
-sh $dir/install_fonts.sh
-sh $dir/install_python.sh
-sh $dir/install_nodejs.sh
-sh $dir/root_configs.sh
-
 sudo apt-get install \
     neovim \
     ripgrep \
@@ -53,6 +43,18 @@ sudo apt-get install \
     neofetch
 
 sudo apt-get autopurge
+
+if [ ! -d "$HOME/.local/kitty.app/" ]
+then
+    sh $dir/install_kitty.sh
+fi
+
+sh $dir/install_fonts.sh
+sh $dir/install_python.sh
+sh $dir/install_nodejs.sh
+sh $dir/root_configs.sh
+sh $dir/init_light.sh
+echo 'sh $dir/remove_xfce.sh' >> todo.log
 
 echo '# ---' >> todo.log
 echo 'Done, check `todo.log` to finish.'
