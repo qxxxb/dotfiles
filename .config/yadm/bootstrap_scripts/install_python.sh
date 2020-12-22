@@ -18,3 +18,9 @@ sudo apt autoremove
 # Keep one system-wide Python3 installation so that the root account can use it
 # too.
 sudo apt-get install python3-pip
+
+# Neovim stuff
+
+pip install neovim
+pip install --upgrade autopep8
+pip install black
