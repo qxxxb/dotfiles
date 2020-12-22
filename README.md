@@ -1,7 +1,17 @@
 # Dotfiles
 
-- ASUS ViveBook S15 laptop
-- Xubuntu 20.04
+- Dell Inspiron 15 laptop home server
+- Ubuntu 20.04
+
+## Static IP
+
+See the "Static IP Address Assignment" section from
+[this page](https://ubuntu.com/server/docs/network-configuration).
+
+## SSH Server
+```
+$ sudo apt-get install openssh-server
+```
 
 ### SSH keys
 
