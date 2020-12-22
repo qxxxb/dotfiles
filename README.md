@@ -3,7 +3,17 @@
 - ASUS ViveBook S15 laptop
 - Xubuntu 20.04
 
-### SSH keys
+I use [yadm](https://yadm.io/).
+
+```
+$ sudo apt-get install yadm
+$ yadm clone https://github.com/qxxxb/dotfiles -b asus_laptop
+```
+
+When prompted, execute the bootstrap script.
+Then check `~/.config/yadm/todo.log` when the bootstrap script completes.
+
+## SSH keys
 
 Local machine:
 ```
@@ -29,18 +39,6 @@ Now to login from the local machine:
 $ ssh <alias>
 ```
 
-## Dotfiles
-
-I use [yadm](https://yadm.io/).
-
-```
-$ sudo apt-get install yadm
-$ yadm clone https://github.com/qxxxb/dotfiles -b asus_laptop
-```
-
-When prompted, execute the bootstrap script.
-Then check `~/.config/yadm/todo.log` when the bootstrap script completes.
-
 ## Desktop
 
 - Switch to `i3`.
@@ -50,19 +48,19 @@ Then check `~/.config/yadm/todo.log` when the bootstrap script completes.
   - Open it `feh`
       - Right click, `File`, `Background`, `Set Filled`
 
-### Touchpad
+## Touchpad
 
 Use `libinput` instead of `synaptics` driver.
 ```
 $ sudo apt-get remove xserver-xorg-input-synaptics
 ```
 
-### Function lock
+## Function lock
 
 The function lock LED is inverted for some reason. A temporary solution is just
 disable it in BIOS.
 
-### Firefox
+## Firefox
 
 - Install `Saka Key`
   - Set to one-handed key binds
