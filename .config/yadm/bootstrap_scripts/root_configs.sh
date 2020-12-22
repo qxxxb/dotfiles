@@ -6,7 +6,7 @@ sudo -s << EOF1
 if [ ! -e /root/.zshrc ]
 then
     sudo ln -s $HOME/.zshrc /root/.zshrc
-    sudo ln -s $HOME/.zshrc-custom /root/.zshrc-custom
+    sudo ln -s $HOME/.zshrc_custom /root/.zshrc_custom
 
     cd /root
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
