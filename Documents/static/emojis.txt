@@ -1629,3 +1629,27 @@
 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Flag: England
 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Flag: Scotland
 🏴󠁧󠁢󠁷󠁬󠁳󠁿 Flag: Wales
+– En dash
+— Em dash
+― Horizontal bar
+‗ Double low line
+‘ Left single quotation mark
+’ Right single quotation mark
+‚ Single low-9 quotation mark
+‛ Single high-reversed-9 quotation mark
+“ Left double quotation mark
+” Right double quotation mark
+„ Double low-9 quotation mark
+† Dagger
+‡ Double dagger
+• Bullet
+… Horizontal ellipsis
+‰ Per mille sign
+′ Prime
+″ Double prime
+‹ Single left-pointing angle quotation mark
+› Single right-pointing angle quotation mark
+‼ Double exclamation mark
+‾ Overline
+⁄ Fraction slash
+⁊ Tironian et sign
