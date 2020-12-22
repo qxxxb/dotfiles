@@ -65,3 +65,12 @@ disable it in BIOS.
 - Install `Saka Key`
   - Set to one-handed key binds
 - Install `uBlock Origin`
+
+## SageMath
+
+```
+$ sudo apt-get install sagemath sagemath-jupyter
+```
+
+We can only run `sage` when `pyenv` is set to `system`. So whenever we want to
+use sage, just do `pyenv shell system`.
