@@ -1,5 +1,0 @@
-alias yd="pwd | tr -d '\n' | xsel -i -b"
-# alias display_off="xset -display :0.0 dpms force off"
-# alias display_on="xset -display :0.0 dpms force on "
-alias display_off="sudo service lightdm stop && light -S 0"
-alias display_on="sudo service lightdm start && light -S 10"

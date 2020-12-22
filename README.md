@@ -50,6 +50,18 @@ Then check `~/.config/yadm/todo.log` when the bootstrap script completes.
   - Open it `feh`
       - Right click, `File`, `Background`, `Set Filled`
 
+### Touchpad
+
+Use `libinput` instead of `synaptics` driver.
+```
+$ sudo apt-get remove xserver-xorg-input-synaptics
+```
+
+### Function lock
+
+The function lock LED is inverted for some reason. A temporary solution is just
+disable it in BIOS.
+
 ### Firefox
 
 - Install `Saka Key`
