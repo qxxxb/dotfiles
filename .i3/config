@@ -176,7 +176,8 @@ bindsym Shift+XF86MonBrightnessUp exec light -A 1
 # Decrease screen brightness
 bindsym Shift+XF86MonBrightnessDown exec light -U 1
 
-bindsym XF86Calculator exec kitty ptpython
+# We probably have to do this because of pyenv
+bindsym XF86Calculator exec kitty zsh -c "source ~/.zshrc && ptpython"
 
 # fullscreen screenshot
 bindsym Print exec \
