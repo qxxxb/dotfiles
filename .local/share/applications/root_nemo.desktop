@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Root nemo
+GenericName=Run nemo as root
+Comment=Access and organize files as root
+Exec=sh -c "pkexec nemo %U"
+Icon=folder
+Keywords=folders;filesystem;explorer;
+Type=Application
+StartupNotify=false
+Categories=GNOME;GTK;Utility;Core;
+MimeType=inode/directory;application/x-gnome-saved-search;
+Actions=open-home;open-computer;open-trash;

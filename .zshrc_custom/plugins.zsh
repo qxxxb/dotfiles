@@ -5,6 +5,7 @@ zplug "lib/completion", from:oh-my-zsh
 zplug "lib/directories", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
+zplug "mafredri/zsh-async", from:"github", use:"async.zsh"
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 zplug load

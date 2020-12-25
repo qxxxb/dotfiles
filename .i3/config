@@ -176,7 +176,8 @@ bindsym Shift+XF86MonBrightnessUp exec light -A 1
 # Decrease screen brightness
 bindsym Shift+XF86MonBrightnessDown exec light -U 1
 
-bindsym XF86Calculator exec kitty ptpython
+# We probably have to do this because of pyenv
+bindsym XF86Calculator exec kitty zsh -c "source ~/.zshrc && ptpython"
 
 # fullscreen screenshot
 bindsym Print exec \
@@ -280,7 +281,7 @@ set $ws10 10: 
 # Discord is an electron app and therefore has window_role="browser-window" so
 # it would be moved to the workspace for browsers if we didn't put it on top to
 # have the highest priority
-assign [class="Skype|discord"] $ws9
+assign [class="Skype|discord|Slack"] $ws9
 assign [class="X-terminal-emulator|Termite|kitty|Code"] $ws2
 assign [window_role="browser"] $ws1
 assign [class="Eclipse"] $ws2
