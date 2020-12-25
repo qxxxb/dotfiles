@@ -5,15 +5,27 @@ export VISUAL=$(which nvim)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# If not root, do this
 if [[ $EUID -ne 0 ]]; then
     export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    function load_nvm() {
+        [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+        [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+    }
 
-    # If not root, use pyenv
+    async_start_worker nvm_worker -n
+    async_register_callback nvm_worker load_nvm
+    async_job nvm_worker sleep 0.1
+
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
     export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
+    function load_pyenv() {
+        eval "$(pyenv init -)"
+        eval "$(pyenv virtualenv-init -)"
+    }
+
+    async_start_worker pyenv_worker -n
+    async_register_callback pyenv_worker load_pyenv
+    async_job pyenv_worker sleep 0.1
 fi
