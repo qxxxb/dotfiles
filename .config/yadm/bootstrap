@@ -35,7 +35,6 @@ sudo apt-get install \
     light \
     firefox \
     yaru-theme-gtk \
-    yaru-theme-icon \
     lxappearance \
     eog \
     feh \
