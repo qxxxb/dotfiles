@@ -117,6 +117,9 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     Plug 'StanAngeloff/php.vim'
     Plug 'pangloss/vim-javascript'
 
+    " Sagemath
+    Plug 'petRUShka/vim-sage'
+
     Plug 'plasticboy/vim-markdown'
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'zah/nim.vim'
@@ -136,7 +139,7 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     " Repeat action from plugin
     Plug 'tpope/vim-repeat'
 
-    Plug 'edkolev/tmuxline.vim'
+    " Plug 'edkolev/tmuxline.vim'
 
     call plug#end()
     " Automatically executes:

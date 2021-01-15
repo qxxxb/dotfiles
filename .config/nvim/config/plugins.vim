@@ -26,7 +26,6 @@ let g:webdevicons_enable_airline_statusline=0
 " ==========================================================
 
 let g:indentLine_showFirstIndentLevel=1
-let g:indentLine_fileTypeExclude=['org', 'calendar']
 
 " FZF
 " ==========================================================
@@ -85,18 +84,20 @@ let g:airline#extensions#anzu#enabled=0
 " ==========================================================
 
 let g:ale_fixers={}
-let g:ale_fixers['php']=['php_cs_fixer']
+let g:ale_fixers['python']=['black']
+" let g:ale_fixers['php']=['php_cs_fixer']
 let g:ale_fixers['javascript']=['prettier', 'eslint']
-let g:ale_fixers['python']=['autopep8', 'yapf']
+let g:ale_fixers['vue']=['prettier', 'eslint']
 
-let g:ale_rust_cargo_use_clippy=1
-let g:ale_fixers['rust']=['rustfmt']
-let g:ale_c_parse_compile_commands=1
+" let g:ale_rust_cargo_use_clippy=1
+" let g:ale_fixers['rust']=['rustfmt']
+" let g:ale_c_parse_compile_commands=1
 
 " matchup
 " ==========================================================
 
 let g:matchup_matchparen_status_offscreen=0
+
 " ==========================================================
 " closetag
 " ==========================================================
@@ -160,3 +161,8 @@ let g:anzu_status_format=
 " ==========================================================
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", $HOME . "/.config/nvim/UltiSnips"]
+
+" gutentags
+" ==========================================================
+
+let g:gutentags_ctags_exclude=["*.min.js", "*.min.css", ".git", "node_modules"]
