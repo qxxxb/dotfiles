@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
-
-dir=$HOME/.config/yadm/bootstrap_scripts
+#!/bin/bash
 
 sudo apt-get install \
     curl \
-    zsh
+    zsh \
+    ripgrep \
+    neovim
 
 if [ "$SHELL" != $(which zsh) ]
 then
@@ -22,38 +22,5 @@ git config --global user.name qxxxb
 git config --global user.email "46016483+qxxxb@users.noreply.github.com"
 git config --global core.excludesFile "$HOME/.gitignore_global"
 
-sudo apt-get install \
-    neovim \
-    ripgrep \
-    i3 \
-    i3blocks \
-    rofi \
-    compton \
-    nemo \
-    xsel \
-    xclip \
-    light \
-    firefox \
-    yaru-theme-gtk \
-    lxappearance \
-    eog \
-    feh \
-    htop \
-    neofetch
-
-sudo apt-get autopurge
-
-if [ ! -d "$HOME/.local/kitty.app/" ]
-then
-    sh $dir/install_kitty.sh
-fi
-
-sh $dir/install_fonts.sh
-sh $dir/install_python.sh
-sh $dir/install_nodejs.sh
-sh $dir/root_configs.sh
-sh $dir/init_light.sh
-echo 'sh $dir/remove_xfce.sh' >> todo.log
-
 echo '# ---' >> todo.log
-echo 'Done, check `todo.log` to finish.'
+echo 'Done, check `todo.log` to finish'
