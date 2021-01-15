@@ -4,7 +4,8 @@ sudo add-apt-repository universe
 sudo apt install \
     fonts-firacode \
     fonts-font-awesome \
-    fonts-cantarell
+    fonts-cantarell \
+    fonts-noto-color-emoji
 
 # For some reason only this specific file works properly.
 dst_dir=/usr/share/fonts/truetype/nerd_fonts
