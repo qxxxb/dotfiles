@@ -29,3 +29,6 @@ if [[ $EUID -ne 0 ]]; then
     async_register_callback pyenv_worker load_pyenv
     async_job pyenv_worker sleep 0.1
 fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
