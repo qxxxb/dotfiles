@@ -224,6 +224,10 @@ bindsym --release button2 kill
 # Wallpaper
 exec_always --no-startup-id sh ~/.fehbg &
 
+exec --no-startup-id fcitx
+
+exec --no-startup-id dropbox start
+
 # Compton
 exec --no-startup-id compton
 
