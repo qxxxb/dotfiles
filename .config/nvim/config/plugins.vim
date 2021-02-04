@@ -84,6 +84,7 @@ let g:airline#extensions#anzu#enabled=0
 " ==========================================================
 
 let g:ale_fixers={}
+" let g:ale_hover_cursor=0 " This causes errors for me
 let g:ale_fixers['python']=['black']
 " let g:ale_fixers['php']=['php_cs_fixer']
 let g:ale_fixers['javascript']=['prettier', 'eslint']
