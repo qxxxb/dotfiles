@@ -5,7 +5,7 @@ curl https://pyenv.run | bash
 # Dependencies for building python
 sudo apt install -y make build-essential libssl-dev zlib1g-dev \
     libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-    libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+    libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
 
 echo 'pyenv install 3.9.1' >> todo.log
 echo 'pyenv install pypy3.6-7.3.1' >> todo.log
