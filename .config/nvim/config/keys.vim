@@ -65,7 +65,7 @@ inoremap <C-U> <C-G>u<C-U>
 nnoremap <silent> <BS> <C-^>
 
 " Delete a buffer without closing the window
-nnoremap <silent> <leader>q :bprevious<bar>split<bar>bnext<bar>bdelete<CR>
+nnoremap <silent> <leader>q :BD<CR>
 
 nnoremap <silent> - :bnext<CR>
 nnoremap <silent> _ :bprevious<CR>

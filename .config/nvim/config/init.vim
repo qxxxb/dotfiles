@@ -141,6 +141,8 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
 
     " Plug 'edkolev/tmuxline.vim'
 
+    Plug 'qpkorr/vim-bufkill'
+
     call plug#end()
     " Automatically executes:
     "     filetype plugin indent on
