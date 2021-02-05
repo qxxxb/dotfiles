@@ -32,8 +32,6 @@ sudo apt-get install \
     nemo \
     xsel \
     xclip \
-    firefox \
-    yaru-theme-gtk \
     lxappearance \
     eog \
     feh \
