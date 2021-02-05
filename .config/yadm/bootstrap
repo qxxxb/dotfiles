@@ -36,7 +36,8 @@ sudo apt-get install \
     eog \
     feh \
     htop \
-    neofetch
+    neofetch \
+    virtualbox-guest-x11
 
 sudo apt-get autopurge
 
