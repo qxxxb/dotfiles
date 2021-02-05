@@ -32,7 +32,6 @@ sudo apt-get install \
     nemo \
     xsel \
     xclip \
-    light \
     firefox \
     yaru-theme-gtk \
     lxappearance \
@@ -52,7 +51,6 @@ sh $dir/install_fonts.sh
 sh $dir/install_python.sh
 sh $dir/install_nodejs.sh
 sh $dir/root_configs.sh
-sh $dir/init_light.sh
 echo 'sh $dir/remove_xfce.sh' >> todo.log
 
 echo '# ---' >> todo.log
