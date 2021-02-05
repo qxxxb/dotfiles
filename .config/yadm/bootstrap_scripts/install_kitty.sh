@@ -16,5 +16,5 @@ sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x2
 sudo update-alternatives --install \
     /etc/alternatives/x-terminal-emulator \
     kitty \
-    /home/plushie/.local/bin/kitty \
+    $HOME/.local/bin/kitty \
     50
