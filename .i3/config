@@ -51,7 +51,7 @@ new_window pixel 3
 
 hide_edge_borders smart
 
-font pango:monospace 9
+font pango:monospace, FontAwesome 9
 
 # Binds
 
