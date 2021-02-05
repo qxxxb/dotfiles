@@ -24,9 +24,7 @@ sudo apt-get remove --purge \
     pidgin-data \
     pidgin-otr \
     ristretto \
-    sgt-launcher \
     sgt-puzzles \
-    shimmer-themes \
     thunar \
     thunar-archive-plugin \
     thunar-data \
@@ -39,17 +37,14 @@ sudo apt-get remove --purge \
     xfce4-indicator-plugin \
     xfce4-mailwatch-plugin \
     xfce4-netload-plugin \
-    xfce4-notes \
     xfce4-notes-plugin \
     xfce4-notifyd \
     xfce4-panel \
-    xfce4-panel-profiles \
     xfce4-places-plugin \
     xfce4-power-manager \
     xfce4-power-manager-data \
     xfce4-power-manager-plugins \
     xfce4-pulseaudio-plugin \
-    xfce4-screensaver \
     xfce4-screenshooter \
     xfce4-session \
     xfce4-settings \
@@ -64,16 +59,7 @@ sudo apt-get remove --purge \
     xfconf \
     xfdesktop4 \
     xfdesktop4-data \
-    xfpanel-switch \
     xfwm4 \
-    xubuntu-artwork \
-    xubuntu-community-wallpapers \
-    xubuntu-community-wallpapers-focal \
-    xubuntu-core \
-    xubuntu-default-settings \
-    xubuntu-desktop \
-    xubuntu-docs \
-    xubuntu-wallpapers \
     atril \
     atril-common
 
@@ -83,7 +69,6 @@ sudo apt-get autopurge
 sudo apt-get install \
     xorg \
     aptdaemon \
-    ubuntu-drivers-common \
     unzip \
     zip \
     policykit-desktop-privileges \
