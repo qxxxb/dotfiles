@@ -19,7 +19,7 @@ def configure(repl):
 
     :param repl: `PythonRepl` instance.
     """
-    repl.enable_mouse_support = True
+    repl.enable_mouse_support = False
 
     repl.vi_mode = True
 
