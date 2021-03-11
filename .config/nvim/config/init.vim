@@ -7,6 +7,7 @@ endif
 silent! if plug#begin('~/.local/share/nvim/plugged')
     " Pretty statusline
     Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
     " File tree
     Plug 'scrooloose/nerdtree'
