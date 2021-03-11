@@ -68,14 +68,41 @@ nnoremap <silent> _ :bprevious<CR>
 
 nnoremap <leader>ie :set tabstop? shiftwidth? expandtab?<CR>
 nnoremap <leader>it4 :set tabstop=4 shiftwidth=4 noexpandtab<CR>
-nnoremap <leader>it2 :set tabstop=2 shiftwidth=2 noexpandtab<CR>
-nnoremap <leader>is4 :set tabstop=4 shiftwidth=4 expandtab<CR>
-nnoremap <leader>is2 :set tabstop=2 shiftwidth=2 expandtab<CR>
+nnoremap <leader>it2 :set tabstop=2 shiftwidth=2 noexpandtab<CR>:IndentLinesReset<CR>
+nnoremap <leader>is4 :set tabstop=4 shiftwidth=4 expandtab<CR>:IndentLinesReset<CR>
+nnoremap <leader>is2 :set tabstop=2 shiftwidth=2 expandtab<CR>:IndentLinesReset<CR>
+
+nnoremap <leader>ir :IndentLinesReset<CR>
+nnoremap <leader>id :IndentLinesDisable<CR>
+nnoremap <leader>in :IndentLinesEnable<CR>
+
+" FZF
+" ==========================================================
+
+nnoremap <silent> <leader><space> :Files<CR>
+nnoremap <silent> <leader>a :Buffers<CR>
+nnoremap <silent> <leader>A :Windows<CR>
+nnoremap <silent> <leader>o :BTags<CR>
+nnoremap <silent> <leader>O :Tags<CR>
+nnoremap <silent> <leader>? :History<CR>
+nnoremap <leader>/ :Rg<space>
+
+nnoremap <silent> <leader>gl :Commits<CR>
+nnoremap <silent> <leader>ga :BCommits<CR>
+
+nnoremap <silent> <leader>zm :Maps<CR>
+nnoremap <silent> <leader>zf :Filetypes<CR>
+
+" Folding
+" ==========================================================
 
 nnoremap <leader>fe :set foldmethod?<CR>
 nnoremap <leader>fm :set foldmethod=manual<CR>
 nnoremap <leader>fi :set foldmethod=indent<CR>
 nnoremap <leader>fk :set foldmethod=marker<CR>
+
+" Other
+" ==========================================================
 
 " Highlight last inserted text
 nnoremap gV `[v`]
