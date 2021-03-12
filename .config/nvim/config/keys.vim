@@ -139,13 +139,15 @@ nnoremap <leader>nc :NERDTreeCWD<CR>
 " asterisk
 " ==========================================================
 
+nnoremap <C-L> <C-G>u<C-U>
+
 map * <Plug>(asterisk-z*)
 map # <Plug>(asterisk-z#)
 map g* <Plug>(asterisk-gz*)
 map g# <Plug>(asterisk-gz#)
 
-nmap <silent> <C-L> <Plug>(searchhi-clear-all)
-vmap <silent> <C-L> <Plug>(searchhi-v-clear-all)
+nmap <silent> <C-L> :nohl<CR>
+vmap <silent> <C-L> :nohl<CR>
 
 " incsearch-fuzzy
 " ==========================================================
