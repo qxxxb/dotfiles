@@ -123,20 +123,6 @@ nnoremap <silent> <leader>ga :BCommits<CR>
 nnoremap <silent> <leader>zm :Maps<CR>
 nnoremap <silent> <leader>zf :Filetypes<CR>
 
-" Gundo
-" ==========================================================
-
-nnoremap <leader>u :GundoToggle<CR>
-
-" easy-align
-" ==========================================================
-
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-
 " gitgutter
 " ==========================================================
 
@@ -150,23 +136,13 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>nn :NERDTree<CR>
 nnoremap <leader>nc :NERDTreeCWD<CR>
 
-" searchhi, asterisk
+" asterisk
 " ==========================================================
 
-nmap n <Plug>(searchhi-n)
-nmap N <Plug>(searchhi-N)
-nmap gd <Plug>(searchhi-gd)
-nmap gD <Plug>(searchhi-gD)
-
-vmap n <Plug>(searchhi-v-n)
-vmap N <Plug>(searchhi-v-N)
-vmap gd <Plug>(searchhi-v-gd)
-vmap gD <Plug>(searchhi-v-gD)
-
-map * <Plug>(asterisk-z*)<Plug>(searchhi-update)<Plug>(searchhi-listen)
-map # <Plug>(asterisk-z#)<Plug>(searchhi-update)<Plug>(searchhi-listen)
-map g* <Plug>(asterisk-gz*)<Plug>(searchhi-update)<Plug>(searchhi-listen)
-map g# <Plug>(asterisk-gz#)<Plug>(searchhi-update)<Plug>(searchhi-listen)
+map * <Plug>(asterisk-z*)
+map # <Plug>(asterisk-z#)
+map g* <Plug>(asterisk-gz*)
+map g# <Plug>(asterisk-gz#)
 
 nmap <silent> <C-L> <Plug>(searchhi-clear-all)
 vmap <silent> <C-L> <Plug>(searchhi-v-clear-all)
@@ -203,11 +179,6 @@ let g:user_emmet_leader_key = '<F2>'
 " ==========================================================
 
 nnoremap <leader>mo :MaximizerToggle<CR>
-
-" goyo
-" ==========================================================
-
-nnoremap <leader>0 :Goyo<CR>
 
 " wordmotion
 " ==========================================================
@@ -249,19 +220,3 @@ nnoremap <silent> <leader>* :set spell!<CR>
 
 " Search and replace selected text
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
-
-" colorschemes
-" ==========================================================
-
-nnoremap <silent> <leader>_1 :let g:gruvbox_contrast_dark="hard"<CR>
-    \:colorscheme gruvbox<CR>
-    \:let g:airline_theme='gruvbox'<CR>
-    \:AirlineRefresh<CR>
-nnoremap <silent> <leader>_2 :let g:gruvbox_contrast_dark="medium"<CR>
-    \:colorscheme gruvbox<CR>
-    \:let g:airline_theme='gruvbox'<CR>
-    \:AirlineRefresh<CR>
-nnoremap <silent> <leader>_3 :let g:gruvbox_contrast_dark="soft"<CR>
-    \:colorscheme gruvbox<CR>
-    \:let g:airline_theme='gruvbox'<CR>
-    \:AirlineRefresh<CR>

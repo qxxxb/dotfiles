@@ -1,19 +1,9 @@
-" Providers
-" ==========================================================
-
-let g:python3_host_prog='$HOME/.pyenv/versions/neovim3/bin/python'
-
 " Appearance
 " ==========================================================
 
 " Colorscheme
 set background=dark
 
-let g:gruvbox_italic=1
-let g:gruvbox_contrast_dark="medium"
-let g:palenight_terminal_italics=1
-
-colorscheme gruvbox
 if (has("termguicolors"))
     set termguicolors
 endif
@@ -73,14 +63,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-highlight Incsearch
-    \ cterm=reverse ctermfg=214 ctermbg=235
-    \ gui=reverse guifg=#fabd2f guibg=#282828
-
-highlight Search
-    \ cterm=reverse ctermfg=208 ctermbg=235
-    \ gui=reverse guifg=#fe8019 guibg=#282828
-
 " Syntax
 " ==========================================================
 
@@ -139,8 +121,3 @@ if v:version >= 700
     autocmd BufLeave * call AutoSaveWinView()
     autocmd BufEnter * call AutoRestoreWinView()
 endif
-
-" TeX
-" ==========================================================
-
-let g:tex_conceal=""

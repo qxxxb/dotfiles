@@ -1,8 +1,7 @@
 " airline
 " ==========================================================
 
-let g:airline_powerline_fonts=1
-let g:airline_theme='gruvbox'
+let g:airline_theme='wombat'
 let g:airline#extensions#tabline#enabled=1
 
 if !exists('g:airline_symbols')
@@ -17,11 +16,6 @@ let g:airline_mode_map = {
     \ 'no' : 'N'
     \ }
 
-" devicons
-" ==========================================================
-
-let g:webdevicons_enable_airline_statusline=0
-
 " indentLine
 " ==========================================================
 
@@ -30,7 +24,7 @@ let g:indentLine_showFirstIndentLevel=1
 " FZF
 " ==========================================================
 
-let $FZF_DEFAULT_OPTS='--height 50% --reverse --prompt=\ ' .
+let $FZF_DEFAULT_OPTS='--height 50% --reverse --prompt=$\ ' .
 \ ' --bind ctrl-a:select-all --bind ctrl-d:deselect-all'
 
 " gitgutter
@@ -47,10 +41,6 @@ set updatetime=500
 
 " Quit NERDTree after opening file
 let NERDTreeQuitOnOpen=1
-
-" Some options: 
-let g:NERDTreeDirArrowExpandable=''
-let g:NERDTreeDirArrowCollapsible=''
 
 " Minimal UI
 let g:NERDTreeMinimalUI=1
@@ -112,51 +102,6 @@ let g:vim_markdown_new_list_item_indent=2
 let g:vim_markdown_conceal=0
 let g:vim_markdown_conceal_code_blocks=0
 let g:vim_markdown_folding_disabled=1
-
-" better-whitespace
-" ==========================================================
-
-" Tabs are required for votl. Because for some reason this causes certain
-" scenarios in insert mode to leave trailing whitespace, I think it's nicer to
-" just disable the ugly red highlights and automatically strip the trailing
-" whitespace when the file is saved. The latter is handled with ftplugin
-let g:better_whitespace_filetypes_blacklist=['votl']
-
-" incsearch
-" ==========================================================
-
-" These highlights disappear when the search query is submitted (i.e. when
-" `<CR>` is pressed)
-highlight link IncSearchCursor Incsearch
-highlight link IncSearchOnCursor Incsearch
-
-" searchhi, anzu, asterisk
-" ==========================================================
-
-let g:searchhi_user_autocmds_enabled=1
-let g:searchhi_redraw_before_on=1
-
-augroup searchhi
-    autocmd!
-
-    " Set blinking guicursor to make it easier to find and print search
-    " status with anzu
-    autocmd User SearchHiOn
-        \ set guicursor=
-            \c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,
-            \n-v:block-blinkwait20-blinkon20-blinkoff20 |
-        \ AnzuUpdateSearchStatusOutput
-
-    " Set default guicursor and clear messages from anzu
-    autocmd User SearchHiOff set guicursor& | echo g:anzu_no_match_word
-augroup END
-
-highlight AnzuSearch
-    \ cterm=bold ctermfg=223 ctermbg=235
-    \ gui=bold guifg=fg guibg=bg
-
-let g:anzu_status_format=
-    \ '%#GruvboxFg4#Search: %#AnzuSearch#%p %#GruvboxYellowBold#[%i/%l]'
 
 " UltiSnips
 " ==========================================================

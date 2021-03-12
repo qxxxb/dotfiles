@@ -9,12 +9,6 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-    " Gruvbox colorscheme
-    Plug 'morhetz/gruvbox'
-
-    " Icons
-    Plug 'ryanoasis/vim-devicons'
-
     " Extra highlighting on NERDTree
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
@@ -60,9 +54,6 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
 
     " Word case utilities for searching and editing
     Plug 'tpope/vim-abolish'
-
-    " Highlight current search result
-    Plug 'qxxxb/vim-searchhi'
 
     " incsearch (dependency of `incsearch-fuzzy`)
     Plug 'haya14busa/incsearch.vim'
