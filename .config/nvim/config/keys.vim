@@ -74,6 +74,7 @@ nnoremap <silent> _ :bprevious<CR>
 " ==========================================================
 
 nnoremap <leader>ie :set tabstop? shiftwidth? expandtab?<CR>
+nnoremap <leader>it8 :set tabstop=8 shiftwidth=8 noexpandtab<CR>
 nnoremap <leader>it4 :set tabstop=4 shiftwidth=4 noexpandtab<CR>
 nnoremap <leader>it2 :set tabstop=2 shiftwidth=2 noexpandtab<CR>:IndentLinesReset<CR>
 nnoremap <leader>is4 :set tabstop=4 shiftwidth=4 expandtab<CR>:IndentLinesReset<CR>

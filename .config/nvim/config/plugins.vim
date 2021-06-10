@@ -88,10 +88,10 @@ let g:ale_fixers={}
 let g:ale_fixers['python']=['black']
 
 let g:ale_fixers['c']=['clang-format']
-let g:ale_c_clangformat_options='-style="{IndentWidth: 4}"'
 
 " let g:ale_fixers['php']=['php_cs_fixer']
 let g:ale_fixers['javascript']=['prettier', 'eslint']
+let g:ale_fixers['typescript']=['prettier', 'eslint']
 let g:ale_fixers['vue']=['prettier', 'eslint']
 
 " let g:ale_rust_cargo_use_clippy=1
@@ -170,4 +170,9 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", $HOME . "/.config/nvim/UltiSnips
 " gutentags
 " ==========================================================
 
+if executable('rg')
+    let g:gutentags_file_list_command = 'rg --files'
+endif
+
 let g:gutentags_ctags_exclude=["*.min.js", "*.min.css", ".git", "node_modules"]
+

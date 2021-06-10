@@ -143,6 +143,8 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
 
     Plug 'qpkorr/vim-bufkill'
 
+    Plug 'elixir-editors/vim-elixir'
+
     call plug#end()
     " Automatically executes:
     "     filetype plugin indent on

@@ -228,6 +228,8 @@ exec --no-startup-id fcitx
 
 exec --no-startup-id dropbox start
 
+exec --no-startup-id [ ! -s ~/.config/mpd/pid ] && mpd
+
 # Compton
 exec --no-startup-id compton
 
