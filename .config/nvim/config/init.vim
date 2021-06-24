@@ -16,7 +16,7 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     Plug 'scrooloose/nerdtree'
 
     " Fuzzy finder
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 
     " Tag outline viewer; show current tag in status bar
@@ -36,9 +36,6 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
 
     " Simple completion with <TAB>
     Plug 'ajh17/VimCompletesMe'
-
-    " Highlight characters past column 80
-    Plug 'whatyouhide/vim-lengthmatters'
 
     " Whitespace management
     Plug 'ntpeters/vim-better-whitespace'
@@ -76,9 +73,6 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     " Snippets
     Plug 'honza/vim-snippets'
 
-    " Tag management
-    Plug 'ludovicchabant/vim-gutentags'
-
     " New text object based on indentation
     Plug 'michaeljsmith/vim-indent-object'
 
@@ -92,22 +86,6 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
 
     " Autoclose HTML tags
     Plug 'alvan/vim-closetag'
-
-    Plug 'StanAngeloff/php.vim'
-    Plug 'pangloss/vim-javascript'
-
-    " Sagemath
-    Plug 'petRUShka/vim-sage'
-
-    Plug 'plasticboy/vim-markdown'
-    Plug 'octol/vim-cpp-enhanced-highlight'
-    Plug 'zah/nim.vim'
-    Plug 'digitaltoad/vim-pug'
-
-    " Needs to be before rust.vim
-    Plug 'cespare/vim-toml'
-
-    Plug 'rust-lang/rust.vim'
 
     " Git integration
     Plug 'tpope/vim-fugitive'

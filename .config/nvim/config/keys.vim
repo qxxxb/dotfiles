@@ -7,7 +7,6 @@ let mapleader=" "
 " Toggle breaking words on linebreaks
 nnoremap <leader>wb :set linebreak!<CR>
 nnoremap <leader>wr :set wrap!<CR>
-nnoremap <leader>wl :LengthmattersToggle<CR>
 nnoremap <leader>wt8 :set textwidth=80<CR>
 nnoremap <leader>wt0 :set textwidth=0<CR>
 
