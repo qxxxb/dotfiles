@@ -88,6 +88,7 @@ let g:ale_fixers={}
 let g:ale_fixers['python']=['black']
 
 let g:ale_fixers['c']=['clang-format']
+let g:ale_fixers['cpp']=['clang-format']
 
 " let g:ale_fixers['php']=['php_cs_fixer']
 let g:ale_fixers['javascript']=['prettier', 'eslint']

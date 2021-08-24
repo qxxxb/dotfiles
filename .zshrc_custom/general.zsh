@@ -108,6 +108,7 @@ SPACESHIP_PROMPT_ORDER=(
     docker        # Docker section
     venv          # virtualenv section
     pyenv         # Pyenv section
+    conda         # conda section
     exec_time     # Execution time
     line_sep      # Line break
     battery       # Battery level and status

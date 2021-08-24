@@ -2,7 +2,8 @@ export TERM=xterm-256color
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/Programs/static/bin:$PATH
 export PATH=$HOME/Programs/static/go/bin:$PATH
-export PATH=/home/plushie/.nimble/bin:$PATH
+export PATH=$HOME/.nimble/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
 export VISUAL=$(which nvim)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

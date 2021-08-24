@@ -74,7 +74,8 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     Plug 'tpope/vim-abolish'
 
     " Highlight current search result
-    Plug 'qxxxb/vim-searchhi'
+    " Plug 'qxxxb/vim-searchhi'
+    Plug '~/Programs/vim-searchhi'
 
     " incsearch (dependency of `incsearch-fuzzy`)
     Plug 'haya14busa/incsearch.vim'
@@ -98,7 +99,7 @@ silent! if plug#begin('~/.local/share/nvim/plugged')
     Plug 'honza/vim-snippets'
 
     " Tag management
-    Plug 'ludovicchabant/vim-gutentags'
+    " Plug 'ludovicchabant/vim-gutentags'
 
     " New text object based on indentation
     Plug 'michaeljsmith/vim-indent-object'
