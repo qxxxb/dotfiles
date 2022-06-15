@@ -89,11 +89,18 @@ let g:ale_fixers['python']=['black']
 
 let g:ale_fixers['c']=['clang-format']
 let g:ale_fixers['cpp']=['clang-format']
+let g:ale_fixers['rust']=['rustfmt']
+
 
 " let g:ale_fixers['php']=['php_cs_fixer']
 let g:ale_fixers['javascript']=['prettier', 'eslint']
 let g:ale_fixers['typescript']=['prettier', 'eslint']
+let g:ale_linters_ignore={'typescript': ['standard']}
 let g:ale_fixers['vue']=['prettier', 'eslint']
+
+let g:ale_linters_ignore = {
+\   'python': ['pylint', 'flake8'],
+\}
 
 " let g:ale_rust_cargo_use_clippy=1
 " let g:ale_fixers['rust']=['rustfmt']

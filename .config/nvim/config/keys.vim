@@ -111,6 +111,7 @@ inoremap <expr> <CR> Expander()
 " ==========================================================
 
 nnoremap <silent> <leader><space> :Files<CR>
+nnoremap <silent> <leader>e :GFiles<CR>
 nnoremap <silent> <leader>a :Buffers<CR>
 nnoremap <silent> <leader>A :Windows<CR>
 nnoremap <silent> <leader>o :BTags<CR>
@@ -174,8 +175,11 @@ map # <Plug>(asterisk-z#)<Plug>(searchhi-update)
 map g* <Plug>(asterisk-gz*)<Plug>(searchhi-update)
 map g# <Plug>(asterisk-gz#)<Plug>(searchhi-update)
 
-nmap <silent> <C-L> <Plug>(searchhi-clear-all)
-vmap <silent> <C-L> <Plug>(searchhi-v-clear-all)
+" nmap <silent> <C-L> <Plug>(searchhi-clear-all)
+" vmap <silent> <C-L> <Plug>(searchhi-v-clear-all)
+
+nmap <expr> <C-L> g:searchhi_status == 'listen' ? '<Plug>(searchhi-clear-all)' : ':<C-U>set hlsearch<CR><Plug>(searchhi-update)'
+vmap <expr> <C-L> g:searchhi_status == 'listen' ? '<Plug>(searchhi-v-clear-all)' : ':<C-U>set hlsearch<CR><Plug>(searchhi-v-update)'
 
 " incsearch-fuzzy
 " ==========================================================

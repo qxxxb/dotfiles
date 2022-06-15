@@ -94,6 +94,7 @@ bindsym Mod1+Shift+v layout default
 
 # Floating
 bindsym Mod1+f floating toggle
+bindsym Mod1+i floating toggle
 bindsym Mod1+r focus mode_toggle
 
 # Scratchpad
@@ -192,12 +193,11 @@ bindsym Shift+Print exec \
     xclip -selection clipboard -t image/png && \
     notify-send "Screenshot taken"
 # window screenshot
-bindsym Mod1+Print exec \
-    w=$(xdotool selectwindow) && \
-    maim --window=$w | \
+bindsym --release Mod1+Sys_Req exec --no-startup-id \
+    maim --window=$(xdotool selectwindow) | \
     tee ~/Pictures/maim/$(date -I"seconds").png | \
     xclip -selection clipboard -t image/png && \
-    notify-send "Screenshot taken"
+    notify-send -i "applets-screenshooter-symbolic.symbolic" "Screenshot taken"
 
 # Quick apps
 bindsym Mod1+Return exec kitty

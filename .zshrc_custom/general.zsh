@@ -118,3 +118,4 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 export FZF_DEFAULT_OPTS="--reverse --border"
+unalias gap

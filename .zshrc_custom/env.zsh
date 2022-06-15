@@ -4,6 +4,7 @@ export PATH=$HOME/Programs/static/bin:$PATH
 export PATH=$HOME/Programs/static/go/bin:$PATH
 export PATH=$HOME/.nimble/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
+export PATH=$HOME/Programs/static/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH
 export VISUAL=$(which nvim)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
